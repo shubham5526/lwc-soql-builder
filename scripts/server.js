@@ -8,7 +8,7 @@ const app = express();
 app.use(helmet());
 app.use(compression());
 
-const HOST = process.env.HOST || 'localhost';
+const HOST = process.env.HOST || 'https://lwcsoql.herokuapp.com/';
 const PORT = process.env.PORT || 3001;
 const DIST_DIR = './dist';
 
