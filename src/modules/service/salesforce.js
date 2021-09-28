@@ -32,8 +32,7 @@ function jsforceOptions() {
     return {
         clientId: CLIENT_ID,
         redirectUri: `${window.location.origin}${window.location.pathname}`,
-        version: apiVersion,
-        proxyUrl: getProxyUrl()
+        version: apiVersion
     };
 }
 
@@ -80,8 +79,7 @@ export function init(callback) {
         connection = new jsforce.Connection({
             accessToken,
             instanceUrl,
-            version: apiVersion,
-            proxyUrl: getProxyUrl()
+            version: apiVersion
         });
         postConnect(callback);
         return;
